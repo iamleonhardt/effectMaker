@@ -18,7 +18,7 @@
 <div id="main" style="width: 100vw; height:100vh;">
     <div id="leftMenu">
         <div class="menu" id="title">
-            <p>Cool Title</p>
+            <p>Effect Maker</p>
         </div>
         <div class="menu" id="presets">
             <div class="circle icon">
@@ -32,10 +32,14 @@
                 <i class="material-icons md-light md-36">build</i>
             </div>
             <div class="menuText">Variable Settings<br>Other things</div>
-            <input id="image1Input" type="text">
-            <input id="image2Input" type="text">
-            <input id="image3Input" type="text">
-            <button id="addImagesBtn">submit</button>
+            <input id="image1Input" class="textInput" type="text">
+            <input id="image2Input" class="textInput" type="text">
+            <input id="image3Input" class="textInput" type="text"><br>
+            <button id="addImagesBtn">submit</button><br>
+            <label for="minSizeFader">Minimum Size</label><br>
+            <input type="range" min="0" max="40" value="5" id="minSizeFader"><br>
+            <label for="maxSizeFader">Maximum Size</label><br>
+            <input type="range" min="0" max="40" value="15" id="maxSizeFader"><br>
         </div>
         <div class="menu" id="showCode">
             <div class="circle icon">

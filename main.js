@@ -1,13 +1,5 @@
 // effect maker main js
 
-
-
-
-
-
-
-
-
 // Sparkle Effect
 function ninjaVanish(configObj){
     this.coords = configObj.coords;
@@ -63,12 +55,14 @@ function ninjaVanish(configObj){
     }
 }
 
-var image3 = 'http://pngimg.com/upload/hot_dog_PNG10231.png';
-var image2 = 'http://pngimg.com/upload/burger_sandwich_PNG4160.png';
-var image1 = 'http://sherrychao.com/images/pizzaslice.png';
-// var image1 = 'http://1.bp.blogspot.com/-xi7518g5MI0/VV25Inpsk9I/AAAAAAAAAbI/J71q0k5-Rho/s1600/3%2B%25283%2529%2B%25281%2529.png';
-// var image2 = 'https://gdbooks.gitbooks.io/legacyopengl/content/Chapter10/snow.png';
-// var image3 = 'http://www.textures123.com/tutorials/particles/8/particle4u.png';
+// var image3 = 'http://pngimg.com/upload/hot_dog_PNG10231.png';
+// var image2 = 'http://pngimg.com/upload/burger_sandwich_PNG4160.png';
+// var image1 = 'http://sherrychao.com/images/pizzaslice.png';
+var minSize = '5';
+var maxSize = '15';
+var image1 = 'http://1.bp.blogspot.com/-xi7518g5MI0/VV25Inpsk9I/AAAAAAAAAbI/J71q0k5-Rho/s1600/3%2B%25283%2529%2B%25281%2529.png';
+var image2 = 'https://gdbooks.gitbooks.io/legacyopengl/content/Chapter10/snow.png';
+var image3 = 'http://www.textures123.com/tutorials/particles/8/particle4u.png';
 
 function getImagesFromInputs(){
     console.log('The button was clicked and should redefine image1 2 and 3');
@@ -78,8 +72,9 @@ function getImagesFromInputs(){
     console.log('image1 is now : ', image1);
     console.log('image2 is now : ', image2);
     console.log('image3 is now : ', image3);
+    minSize = $('#minSizeInput').val();
+    maxSize = $('#maxSizeInput').val();
 
-    test.display();
 }
 
 function appendCodeDiv(){
@@ -92,7 +87,7 @@ var vanishConfig = {
     coords: [0, 0],
     image: [image1, image2, image3],
     imageCount: 1,
-    size: {min: 15, max: 35},
+    size: {min: minSize, max: maxSize},
     rotation: {min: 0, max: 180},
     appendTo: '#main',
     fadeTime: {min: .2, max: .7},
@@ -101,10 +96,6 @@ var vanishConfig = {
 
 var test = new ninjaVanish(vanishConfig);
 var currentCoordinates;
-
-
-
-
 
 $(document).ready(function(){
     $('#addImagesBtn').click(getImagesFromInputs);
