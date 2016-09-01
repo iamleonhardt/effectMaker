@@ -61,6 +61,7 @@ function ninjaVanish(configObj){
     this.setCoordinates = function(newCoords){
         self.coords = newCoords;
     }
+}
 
 var image3 = 'http://pngimg.com/upload/hot_dog_PNG10231.png';
 var image2 = 'http://pngimg.com/upload/burger_sandwich_PNG4160.png';
