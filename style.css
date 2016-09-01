@@ -30,7 +30,6 @@ p {
     display: inline-block;
     margin: 10px;
 
-
 }
 
 #main {
@@ -49,6 +48,12 @@ p {
     position: relative;
     z-index: 100;
     box-sizing: border-box;
+
+}
+
+.textInput {
+    width: 70%;
+    height: 3vh;
 
 }
 

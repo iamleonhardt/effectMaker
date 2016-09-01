@@ -1,7 +1,6 @@
 // effect maker main js
 var test = new particles();
 
-
 function getImagesFromInputs(){
     var newArray = [];
     var image1 = $('#image1Input').val();
@@ -20,15 +19,12 @@ function appendCodeDiv(){
 }
 
 $(document).ready(function(){
-
     $('#addImagesBtn').click(getImagesFromInputs);
     $('#showCode').click(appendCodeDiv);
-
     $('#main').mousemove(function(e){
         currentCoordinates = [e.pageX, e.pageY];
         // console.log(currentCoordinates);
         test.setCoordinates(currentCoordinates);
         test.display();
     });
-
 });
