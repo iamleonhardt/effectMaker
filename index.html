@@ -35,11 +35,17 @@
             <input id="image1Input" class="textInput" type="text">
             <input id="image2Input" class="textInput" type="text">
             <input id="image3Input" class="textInput" type="text"><br>
+            <!--Button-->
             <button id="addImagesBtn">submit</button><br>
-            <label for="minSizeFader">Minimum Size</label><br>
-            <input type="range" min="0" max="40" value="5" id="minSizeFader"><br>
-            <label for="maxSizeFader">Maximum Size</label><br>
-            <input type="range" min="0" max="40" value="15" id="maxSizeFader"><br>
+            <!--Min slider-->
+            <label for="minSizeSlider">Minimum Size: </label>
+            <output for="minSizeSlider" id="minSizeValue">5</output><br>
+            <input type="range" min="0" max="40" value="5" oninput="updateMinSizeOuput(value)" id="minSizeSlider"><br>
+            <!--Max slider-->
+            <label for="maxSizeSlider">Maximum Size: </label>
+            <output for="maxSizeSlider" id="maxSizeValue">15</output><br>
+            <input type="range" min="0" max="40" value="15" oninput="updateMaxSizeOuput(value)" id="maxSizeSlider"><br>
+
         </div>
         <div class="menu" id="showCode">
             <div class="circle icon">

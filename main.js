@@ -1,7 +1,7 @@
 // effect maker main js
 var test = new particles();
 
-function getImagesFromInputs(){
+function getImagesFromInputs() {
     var newArray = [];
     var image1 = $('#image1Input').val();
     var image2 = $('#image2Input').val();
@@ -13,15 +13,48 @@ function getImagesFromInputs(){
     test.setNewimages(newArray);
 }
 
-function appendCodeDiv(){
+function getSizesFromSliders() {
+    var minSize = $('#minSizeSlider').val();
+    console.log($('#minSizeSlider').val());
+    var maxSize = $('#maxSizeSlider').val();
+    console.log('minSize : ', minSize);
+    console.log('maxSize : ', maxSize);
+
+    test.setNewSizes(minSize, maxSize);
+    test.display();
+}
+
+function appendCodeDiv() {
     var codeDiv = $('<div>').attr('id', 'codeBlock').text('This is the code for the effect');
     $('#main').append(codeDiv);
 }
 
-$(document).ready(function(){
-    $('#addImagesBtn').click(getImagesFromInputs);
+function updateMinSizeOuput(value){
+    $('#minSizeValue').val(value);
+    console.log('Slider triggered, value is : ', value);
+}
+
+function updateMaxSizeOuput(value){
+    $('#maxSizeValue').val(value);
+    console.log('Slider triggered, value is : ', value);
+}
+
+function applyClickHandler() {
+    $('#addImagesBtn').click(getImagesFromInputs, getSizesFromSliders);
+    // $('#addImagesBtn').click(getSizesFromSliders);
     $('#showCode').click(appendCodeDiv);
-    $('#main').mousemove(function(e){
+
+}
+
+//todo make slider oninput call the updateOutput AND the updateSize
+// function onSliderInput(){
+//     updateMinSizeOuput();
+//     getSizesFromSliders();
+// }
+
+$(document).ready(function () {
+    applyClickHandler();
+    $('#main').mousemove(function (e) {
         currentCoordinates = [e.pageX, e.pageY];
         // console.log(currentCoordinates);
         test.setCoordinates(currentCoordinates);
