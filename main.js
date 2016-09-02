@@ -21,20 +21,25 @@ function getSizesFromSliders() {
     console.log('maxSize : ', maxSize);
 
     test.setNewSizes(minSize, maxSize);
-    test.display();
 }
 
 function appendCodeDiv() {
-    var codeDiv = $('<div>').attr('id', 'codeBlock').text('This is the code for the effect');
+    var codeDiv = $('<div id="codeBlock">This is the code for the effect</div>');
     $('#main').append(codeDiv);
+    codeDiv.hide();
+
+    $("#showCode").click(function(){
+        codeDiv.toggle();
+    });
 }
 
-function updateMinSizeOuput(value){
+
+function updateMinSizeOuput(value) {
     $('#minSizeValue').val(value);
     console.log('Slider triggered, value is : ', value);
 }
 
-function updateMaxSizeOuput(value){
+function updateMaxSizeOuput(value) {
     $('#maxSizeValue').val(value);
     console.log('Slider triggered, value is : ', value);
 }
@@ -42,7 +47,7 @@ function updateMaxSizeOuput(value){
 function applyClickHandler() {
     $('#addImagesBtn').click(getImagesFromInputs);
     $('#addImagesBtn').click(getSizesFromSliders);
-    $('#showCode').click(appendCodeDiv);
+    appendCodeDiv();
 }
 
 //todo make slider oninput call the updateOutput AND the updateSize
