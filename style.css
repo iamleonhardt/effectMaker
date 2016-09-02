@@ -29,14 +29,11 @@ p {
     border-radius: 50%;
     display: inline-block;
     margin: 10px;
-
 }
 
 #main {
     position: relative;
 }
-
-
 
 #leftMenu {
     width: 20vw;
@@ -48,13 +45,11 @@ p {
     position: relative;
     z-index: 100;
     box-sizing: border-box;
-
 }
 
 .textInput {
     width: 70%;
     height: 3vh;
-
 }
 
 .menu {
@@ -65,7 +60,6 @@ p {
 
 .menuText {
     display:inline-block;
-
 }
 
 #title {
@@ -103,5 +97,4 @@ p {
     z-index: 100;
     overflow: hidden;
     box-sizing: border-box;
-
 }

@@ -40,10 +40,9 @@ function updateMaxSizeOuput(value){
 }
 
 function applyClickHandler() {
-    $('#addImagesBtn').click(getImagesFromInputs, getSizesFromSliders);
-    // $('#addImagesBtn').click(getSizesFromSliders);
+    $('#addImagesBtn').click(getImagesFromInputs);
+    $('#addImagesBtn').click(getSizesFromSliders);
     $('#showCode').click(appendCodeDiv);
-
 }
 
 //todo make slider oninput call the updateOutput AND the updateSize
