@@ -33,7 +33,6 @@ function appendCodeDiv() {
     });
 }
 
-
 function updateMinSizeOuput(value) {
     $('#minSizeValue').val(value);
     console.log('Slider triggered, value is : ', value);

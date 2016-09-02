@@ -17,8 +17,8 @@ function particles(configObj){
     this.image = this.configs.image;
     this.imageCount = this.configs.imageCount;
     this.size = this.configs.size;
-    this.minSize = this.configs.size.min;
-    this.maxSize = this.configs.size.max;
+    // this.minSize = this.configs.size.min;
+    // this.maxSize = this.configs.size.max;
     this.rotation = this.configs.rotation;
     this.appendTo = this.configs.appendTo;
     this.fadeTime = this.configs.fadeTime;
@@ -62,10 +62,11 @@ function particles(configObj){
     };
     this.setNewimages = function(newImageArray){
         self.image = newImageArray;
+        console.log('in setNewimages self : ', self);
     }
     this.setNewSizes = function(minSize, maxSize){
-        self.minSize = minSize;
-        self.maxSize = maxSize;
+        self.size.min = minSize;
+        self.size.max = maxSize;
         console.log('self.minSize is : ', self.minSize);
         console.log('self.maxSize is : ', self.maxSize);
     }
