@@ -15,7 +15,7 @@ function getImagesFromInputs(){
 }
 
 function appendCodeDiv(){
-    var codeDiv = $('<div>').attr('id', 'codeBlock').text('This is the code for the effect');
+    var codeDiv = $('<div>').attr('id', 'codeBlock').text('This  is the code for the effect');
     $('#main').append(codeDiv);
 }
 
