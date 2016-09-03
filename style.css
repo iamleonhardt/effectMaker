@@ -7,33 +7,36 @@ body {
     opacity: .87;
 }
 
-.material-icons.md-light {
-    color: rgba(255, 255, 255, 1);
-}
-.material-icons.md-36 {
-    font-size: 24px;
-    position: relative;
-    left: 6px;
-    top: 6px;
-}
-
 p {
     margin: 0;
     padding: 10px;
 }
 
-.circle {
-    height: 40px;
-    width: 40px;
-    background-color: #a3a3a3;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 10px;
-}
-
 #main {
     position: relative;
 }
+.header{
+    height: 20vh;
+    width: 100vw;
+    background-color: #cccccc;
+}
+
+#EffectsMenuWrapper{
+    height: 80vh;
+    width: 100vw;
+    background-color: #444444;
+}
+
+.effectContainer {
+    height: 30vw;
+    width: 30vw;
+    background-color: #777777;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 5vw;
+}
+
+
 
 #leftMenu {
     width: 20vw;
@@ -97,4 +100,23 @@ p {
     z-index: 100;
     overflow: hidden;
     box-sizing: border-box;
+}
+
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+.material-icons.md-36 {
+    font-size: 24px;
+    position: relative;
+    left: 6px;
+    top: 6px;
+}
+.circle {
+    height: 40px;
+    width: 40px;
+    background-color: #a3a3a3;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
 }
