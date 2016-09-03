@@ -67,8 +67,8 @@ function particles(configObj){
     this.setNewSizes = function(minSize, maxSize){
         self.size.min = minSize;
         self.size.max = maxSize;
-        console.log('self.minSize is : ', self.minSize);
-        console.log('self.maxSize is : ', self.maxSize);
+        console.log('self.size.min is : ', self.size.min);
+        console.log('self.size.max is : ', self.size.max);
     }
 
     this.setCoordinates = function(newCoords){

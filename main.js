@@ -35,12 +35,14 @@ function appendCodeDiv() {
 
 function updateMinSizeOuput(value) {
     $('#minSizeValue').val(value);
-    console.log('Slider triggered, value is : ', value);
+    getSizesFromSliders();
+
 }
 
 function updateMaxSizeOuput(value) {
     $('#maxSizeValue').val(value);
-    console.log('Slider triggered, value is : ', value);
+    getSizesFromSliders();
+
 }
 
 function applyClickHandler() {
@@ -49,17 +51,10 @@ function applyClickHandler() {
     appendCodeDiv();
 }
 
-//todo make slider oninput call the updateOutput AND the updateSize
-// function onSliderInput(){
-//     updateMinSizeOuput();
-//     getSizesFromSliders();
-// }
-
 $(document).ready(function () {
     applyClickHandler();
     $('#main').mousemove(function (e) {
         currentCoordinates = [e.pageX, e.pageY];
-        // console.log(currentCoordinates);
         test.setCoordinates(currentCoordinates);
         test.display();
     });
