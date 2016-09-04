@@ -28,8 +28,8 @@ p {
 }
 
 .effectContainer {
-    height: 30vw;
-    width: 30vw;
+    height: 30vh;
+    width: 30vh;
     background-color: #777777;
     box-sizing: border-box;
     display: inline-block;

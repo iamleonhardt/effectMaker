@@ -2,9 +2,9 @@ function particles(configObj){
     this.configs = configObj|| {
             coords: [0, 0],                 //Start coordinates if effect is used statically
             image: [                        //Array of images to be repeated in effect
-                '../images/snow.png',
-                '../images/particle4u.png',
-                '../images/particle5u.png'
+                '../images/sparkle1.png',
+                '../images/sparkle3.png',
+                '../images/sparkle2.png'
             ],
             imageCount: 1,                  //Number of images generated per mouse move
             size: {min: 10, max: 20},       //Lower and upper bound of image size for random selection

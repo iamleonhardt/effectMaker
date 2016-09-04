@@ -1,4 +1,4 @@
-var test = new particles();
+// var test = new particles();
 
 // Doc Ready and applying click handlers
 function applyClickHandler() {
