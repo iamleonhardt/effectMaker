@@ -12,19 +12,31 @@ p {
     padding: 10px;
 }
 
+a {
+    text-decoration: none;
+
+}
 #main {
     position: relative;
 }
 .header{
-    height: 20vh;
+    height: 10vh;
     width: 100vw;
     background-color: #cccccc;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 40px;
+
 }
 
 #EffectsMenuWrapper{
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     background-color: #444444;
+    padding: 2.5vw;
+    box-sizing: border-box;
+    text-align: center;
+
 }
 
 .effectContainer {
@@ -33,7 +45,12 @@ p {
     background-color: #777777;
     box-sizing: border-box;
     display: inline-block;
-    margin: 5vw;
+    margin: 2.5vw;
+    font-size: 1.5em;
+    line-height: 30vh;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50%;
 }
 
 
@@ -71,6 +88,8 @@ p {
     height: 10%;
     color: #ffffff;
     background-color: #3e50b4;
+    text-decoration: none;
+
 }
 
 #presets {
