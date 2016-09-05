@@ -46,8 +46,8 @@ function updateMaxSizeOuput(value) {
 }
 
 function applyClickHandler() {
-    $('#addImagesBtn').click(getImagesFromInputs);
-    $('#addImagesBtn').click(getSizesFromSliders);
+    $('.addImagesButton').click(getImagesFromInputs);
+    $('.addImagesButton').click(getSizesFromSliders);
     appendCodeDiv();
 }
 

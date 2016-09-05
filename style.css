@@ -4,7 +4,6 @@ body {
     padding: 0;
     font-family: Roboto, Arial, sans-serif;
     color: #000000;
-    opacity: .87;
 }
 
 p {
@@ -19,6 +18,8 @@ a {
 #main {
     position: relative;
 }
+
+/* Main Page */
 .header{
     height: 10vh;
     width: 100vw;
@@ -26,7 +27,6 @@ a {
     text-align: center;
     line-height: 10vh;
     font-size: 40px;
-
 }
 
 #EffectsMenuWrapper{
@@ -36,7 +36,6 @@ a {
     padding: 2.5vw;
     box-sizing: border-box;
     text-align: center;
-
 }
 
 .effectContainer {
@@ -53,57 +52,134 @@ a {
     border-radius: 50%;
 }
 
-
+/* Effects Page Left Menu */
 
 #leftMenu {
-    width: 20vw;
+    width: 280px;
     height: 96vh;
     margin: 2vh 1vw;
-    /*padding: 1vh 1vw;*/
-    background-color: #f5f5f5;
     display: inline-block;
     position: relative;
     z-index: 100;
     box-sizing: border-box;
 }
 
-.textInput {
-    width: 70%;
-    height: 3vh;
-}
-
-.menu {
-    width: 100%;
-    height: 10vh;
-    /*padding: 1vh 0;*/
+.menu{
+    height: 50px;
+    margin: 20px 0;
+    background-color: #f5f5f5;
+    border-radius: 4px;
 }
 
 .menuText {
     display:inline-block;
+    color: #F23942;
 }
 
 #title {
-    /*text-transform: uppercase;*/
     font-size: 2em;
     height: 10%;
     color: #ffffff;
-    background-color: #3e50b4;
+    background-color: #F23942;
     text-decoration: none;
-
+    line-height: 56px;
+    border-radius: 4px;
 }
 
-#presets {
-    height: 10%;
-    color: #000000;
-    opacity: .87;
+.presets {
+    height: 50px;
+    margin: 20px 0;
+    /*background-color: #f5f5f5;*/
 }
 
-#paramSettings {
-    height: 60%;
+.paramSettings {
+    height: 50px;
+    margin: 20px 0;
+    /*background-color: #f5f5f5;*/
 }
 
+/* Text Input Containers */
+.settingContainer {
+    width: 280px;
+    height: 44px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px 0;
+    /* z-index: 4; */
+    box-sizing: border-box;
+    opacity: 1;
+}
+
+.imgPreview {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:relative;
+    bottom: 3px;
+}
+
+#imgPreview1{
+    background-image: url('images/cupcake1.png');
+}
+#imgPreview2{
+    background-image: url('images/cupcake2.png');
+}
+#imgPreview3{
+    background-image: url('images/cupcake3.png');
+}
+
+.textInput {
+    width: 166px;
+    height: 24px;
+    position: relative;
+    bottom: 18px;
+    margin: 8px;
+}
+
+.addImagesButton {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #a5a5a5;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    position: relative;
+    bottom: 14px;
+}
+
+/* Range Inputs */
+.settingContainer label {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    color: #F23942;
+    letter-spacing: 1.7px;
+    line-height: 12px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+    margin: 5px;
+}
+
+.slider input {
+    position: relative;
+    top: 9px;
+    width: 154px;
+}
+
+/* Show Code */
 #showCode {
-    height: 20%;
+    height: 50px;
+    margin: 20px 0;
+    background-color: #f5f5f5;
+    border-radius: 4px;
 }
 
 #codeBlock {
@@ -126,14 +202,14 @@ a {
     color: rgba(255, 255, 255, 1);
 }
 .material-icons.md-36 {
-    font-size: 24px;
+    font-size: 21px;
     position: relative;
-    left: 6px;
-    top: 6px;
+    left: 4px;
+    top: 4px;
 }
 .circle {
-    height: 40px;
-    width: 40px;
+    height: 29px;
+    width: 29px;
     background-color: #a3a3a3;
     border-radius: 50%;
     display: inline-block;

@@ -22,34 +22,45 @@
                 <p>Effect Maker</p>
             </div>
         </a>
-        <div class="menu" id="presets">
+        <div class="menu presets">
             <div class="circle icon">
                 <i class="material-icons md-light md-36">bookmark</i>
             </div>
             <div class="menuText">Preset Options</div>
         </div>
-        <div class="menu" id="paramSettings">
+        <div class="menu paramSettings">
             <div class="circle icon">
                 <i class="material-icons md-light md-36">build</i>
             </div>
-            <div class="menuText">Variable Settings<br>Other things</div>
-            <input id="image1Input" class="textInput" type="text">
-            <input id="image2Input" class="textInput" type="text">
-            <input id="image3Input" class="textInput" type="text"><br>
-            <!--Button-->
-            <button id="addImagesBtn">submit</button>
-            <br>
-            <!--Min slider-->
-            <label for="minSizeSlider">Minimum Size: </label>
-            <output for="minSizeSlider" id="minSizeValue">10</output>
-            <br>
-            <input type="range" min="0" max="100" value="5" oninput="updateMinSizeOuput(value)" id="minSizeSlider"><br>
-            <!--Max slider-->
-            <label for="maxSizeSlider">Maximum Size: </label>
-            <output for="maxSizeSlider" id="maxSizeValue">20</output>
-            <br>
-            <input type="range" min="0" max="100" value="15" oninput="updateMaxSizeOuput(value)" id="maxSizeSlider"><br>
+            <div class="menuText">Variable Settings</div>
         </div>
+
+        <div class="settingContainer">
+            <div class="imgPreview" id="imgPreview1"></div>
+            <input id="image1Input" class="textInput" type="text">
+            <div class="addImagesButton">+</div>
+        </div>
+        <div class="settingContainer">
+            <div class="imgPreview" id="imgPreview2"></div>
+            <input id="image2Input" class="textInput" type="text">
+            <div class="addImagesButton">+</div>
+        </div>
+        <div class="settingContainer">
+            <div class="imgPreview" id="imgPreview3"></div>
+            <input id="image3Input" class="textInput" type="text">
+            <div class="addImagesButton" >+</div>
+        </div>
+        <!--Min slider-->
+        <div class="settingContainer slider">
+            <label for="minSizeSlider">Min Size: <output for="minSizeSlider" id="minSizeValue">10</output></label>
+            <input type="range" min="0" max="100" value="5" oninput="updateMinSizeOuput(value)" id="minSizeSlider">
+        </div>
+        <!--Max slider-->
+        <div  class="settingContainer slider">
+            <label for="maxSizeSlider">Max Size: <output for="maxSizeSlider" id="maxSizeValue">20</output></label>
+            <input type="range" min="0" max="100" value="15" oninput="updateMaxSizeOuput(value)" id="maxSizeSlider">
+        </div>
+
         <div class="menu" id="showCode">
             <div class="circle icon">
                 <i class="material-icons md-light md-36">code</i>
