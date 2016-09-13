@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../effectCode/particles.js"></script>
+    <script src="emitter.js"></script>
+    <title>Effect Maker : Emitter Effect</title>
+</head>
+<body>
+<div id="main" style="width: 100vw; height:100vh;">
+    <div id="leftMenu">
+        <a href="../index.html">
+            <div class="menu" id="title">
+                <p>Effect Maker</p>
+            </div>
+        </a>
+        <div class="menu presets">
+            <div class="circle icon">
+                <i class="material-icons md-light md-36">bookmark</i>
+            </div>
+            <div class="menuText">Preset Options</div>
+        </div>
+        <div class="menu paramSettings">
+            <div class="circle icon">
+                <i class="material-icons md-light md-36">build</i>
+            </div>
+            <div class="menuText">Variable Settings</div>
+        </div>
+        <div class="settingContainer">
+            <div class="imgPreview" id="imgPreview1"></div>
+            <input id="image1Input" class="textInput" type="text">
+            <div class="addImagesButton imageButton1">+</div>
+        </div>
+        <div class="settingContainer">
+            <div class="imgPreview" id="imgPreview2"></div>
+            <input id="image2Input" class="textInput" type="text">
+            <div class="addImagesButton imageButton2">+</div>
+        </div>
+        <div class="settingContainer">
+            <div class="imgPreview" id="imgPreview3"></div>
+            <input id="image3Input" class="textInput" type="text">
+            <div class="addImagesButton imageButton3" >+</div>
+        </div>
+        <!--Min slider-->
+        <div class="settingContainer slider">
+            <label for="minSizeSlider">Min Size: <output for="minSizeSlider" id="minSizeValue">10</output></label>
+            <input type="range" min="0" max="100" value="5" oninput="updateMinSizeOuput(value)" id="minSizeSlider">
+        </div>
+        <!--Max slider-->
+        <div  class="settingContainer slider">
+            <label for="maxSizeSlider">Max Size: <output for="maxSizeSlider" id="maxSizeValue">20</output></label>
+            <input type="range" min="0" max="100" value="15" oninput="updateMaxSizeOuput(value)" id="maxSizeSlider">
+        </div>
+
+        <div class="menu" id="showCode">
+            <div class="circle icon">
+                <i class="material-icons md-light md-36">code</i>
+            </div>
+            <div class="menuText">Show Code</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -2,9 +2,9 @@ function particles(configObj){
     this.configs = configObj|| {
             coords: [0, 0],                 //Start coordinates if effect is used statically
             image: [                        //Array of images to be repeated in effect
-                'effects/images/snow.png',
-                'effects/images/particle4u.png',
-                'effects/images/particle5u.png'
+                '../images/sparkle1.png',
+                '../images/sparkle3.png',
+                '../images/sparkle2.png'
             ],
             imageCount: 1,                  //Number of images generated per mouse move
             size: {min: 10, max: 20},       //Lower and upper bound of image size for random selection
@@ -17,8 +17,8 @@ function particles(configObj){
     this.image = this.configs.image;
     this.imageCount = this.configs.imageCount;
     this.size = this.configs.size;
-    this.minSize = this.configs.size.min;
-    this.maxSize = this.configs.size.max;
+    // this.minSize = this.configs.size.min;
+    // this.maxSize = this.configs.size.max;
     this.rotation = this.configs.rotation;
     this.appendTo = this.configs.appendTo;
     this.fadeTime = this.configs.fadeTime;
@@ -62,12 +62,20 @@ function particles(configObj){
     };
     this.setNewimages = function(newImageArray){
         self.image = newImageArray;
+        console.log('in setNewimages self : ', self);
     }
     this.setNewSizes = function(minSize, maxSize){
+<<<<<<< HEAD:effects/particles.js
         self.minSize = parseInt(minSize);
         self.maxSize = parseInt(maxSize);
         console.log('self.minSize is : ', self.minSize);
         console.log('self.maxSize is : ', self.maxSize);
+=======
+        self.size.min = minSize;
+        self.size.max = maxSize;
+        console.log('self.size.min is : ', self.size.min);
+        console.log('self.size.max is : ', self.size.max);
+>>>>>>> f884195f0952ce73d3df81a07c43bea81e0bc7fa:effectCode/particles.js
     }
 
     this.setCoordinates = function(newCoords){
