@@ -64,8 +64,8 @@ function particles(configObj){
         self.image = newImageArray;
     }
     this.setNewSizes = function(minSize, maxSize){
-        self.minSize = minSize;
-        self.maxSize = maxSize;
+        self.minSize = parseInt(minSize);
+        self.maxSize = parseInt(maxSize);
         console.log('self.minSize is : ', self.minSize);
         console.log('self.maxSize is : ', self.maxSize);
     }
